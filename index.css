@@ -2,28 +2,83 @@ body {
     display: flex; /* <body> is defined as a FLEX-CONTAINER*/
     flex-direction: column; /* The direct children of body will be positionned verticaly as blocks */ 
     justify-content: space-between; /* Along the main axis, which is vertical, the flex-items are separated with space between them */
+    
     min-height: 100vh; /* That forces the body to occupy the whole height of the user's screen (100vh = 100% of 'vertical height' */
     margin: 0; 
     padding: 0; 
 }
 
 header {
-    display: flex; /* <header> is defined as a FLEX-CONTAINER.   <header> is already a flex-item of body, but will also be a flex-container for its own direct children */
-    flex-direction: row; /* flex-items of <header> will be displayed horizontaly one after another */
-    justify-content: flex-end; /* Along the PRIMARY AXIS, which is here horizontal, flex-items of <header> will be positionned at the end of <header> */
+    display: flex;
+    justify-content: flex-end;
 }
 
 main {
-    display: flex; /* <main> is defined as a FLEX-CONTAINER*/
-    flex-direction: column; /* The direct children of <main> will be positionned verticaly as blocks */ 
-    align-items: center; /* Along the SECONDARY AXIS, which is horizontal, the flex-items are centered */
-    justify-content: flex-start; /* For example here we are also aligning them at the start on the PRIMARY AXIS, which is here the vertical axis*/
+    display: flex;
+    flex-direction: column; /* DEFINTION PRIMARY AXIS */
+    justify-content: center; /* ALIGNEMENT SUR AXE PRIMAIRE */
+    align-items: center;  /* ALIGNEMENT SUR AXE SECONDAIRE */
+
+    padding-bottom: 150px;
 }
 
-footer {
-    display: flex; /* <footer> is defined as a FLEX-CONTAINER*/
-    flex-direction: column; /* The direct children of <footer> will be positionned verticaly as blocks */ 
+
+#zoneBoutons { /* Cadre rouge ZONE BOUTONS*/ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    width: 500px;
+    height: 200px;
 }
+
+#zoneBoutons > div {
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+}
+
+
+footer > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .left {
+    border: 3px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
