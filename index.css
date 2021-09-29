@@ -1,13 +1,10 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
     display: flex; /* <body> is defined as a FLEX-CONTAINER*/
     flex-direction: column; /* The direct children of body will be positionned verticaly as blocks */ 
     justify-content: space-between; /* Along the main axis, which is vertical, the flex-items are separated with space between them */
     min-height: 100vh; /* That forces the body to occupy the whole height of the user's screen (100vh = 100% of 'vertical height' */
-
-    /* Lines below are only here for styling, and don't impact elements positionning */
-    background-color: rgba(114, 231, 192, 0.63);
+    margin: 0; 
+    padding: 0; 
 }
 
 header {
@@ -36,11 +33,6 @@ footer {
 
 /* The code below is only here for styling, and doesn't impact elements global positionning 
 This code has been separated from the above for readability purposes only */
-body > * {
-    border: 2px solid orange;
-}
-
-header > div, main > section, footer > div {
-    border: 1px solid red;
-    margin: 10px;
-}
+body {background-color: rgba(114, 231, 192, 0.63);}
+body > * {border: 2px solid orange;}
+header > div, main > section, footer > div { border: 1px solid red; margin: 10px; }
