@@ -21,10 +21,9 @@ main {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* <footer> is defined as a FLEX-CONTAINER*/
+    flex-direction: column; /* The direct children of <footer> will be positionned verticaly as blocks */ 
 }
-
 
 
 
